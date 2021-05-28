@@ -2,8 +2,10 @@ ports:
   - port: 5000
 
 tasks:
-  - init: npm install
+  - name: "express Server"
+    init: npm install
     command: npm run devStart
+  - openMode: split-right
 
 github:
   prebuilds:
